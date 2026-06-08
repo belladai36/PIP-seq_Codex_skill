@@ -1,0 +1,67 @@
+# Edit this file when real FASTQ files, reference files, and metadata arrive.
+
+project_name: wolffia_smartseq_atlas
+
+paths:
+  sample_sheet: data/metadata/samples.csv
+  marker_genes: data/metadata/marker_genes.csv
+  genome_fasta: data/reference/Wolffia_genome.fa
+  annotation_gtf: data/reference/Wolffia_genes.gtf
+  star_index: data/reference/star_index
+  raw_fastq_dir: data/raw_fastq
+  fastqc_dir: results/fastqc
+  multiqc_dir: results/multiqc
+  alignment_dir: results/alignments
+  counts_dir: results/counts
+  scanpy_dir: results/scanpy
+  figure_dir: figures
+  log_dir: logs
+
+fastq:
+  paired_end: true
+  fastqc_threads: 4
+
+alignment:
+  threads: 8
+  read_files_command: zcat
+  star_extra_args:
+    - --outSAMtype
+    - BAM
+    - SortedByCoordinate
+    - --quantMode
+    - GeneCounts
+
+featurecounts:
+  threads: 8
+  strandedness: 0  # 0 = unstranded, 1 = stranded, 2 = reversely stranded
+  paired_end: true
+  extra_args:
+    - -t
+    - exon
+    - -g
+    - gene_id
+
+qc:
+  # These are starting points only. Inspect the saved QC plots before final analysis.
+  min_genes_per_cell: 500
+  max_genes_per_cell: null
+  min_counts_per_cell: 1000
+  max_counts_per_cell: null
+  max_percent_mito: 20
+  mitochondrial_gene_prefixes: ["MT-", "Mt", "mitochondrion"]
+  plastid_gene_prefixes: ["chloroplast", "plastid", "Pt", "CP"]
+  filter_to_passing_cells: true
+
+analysis:
+  target_sum: 10000
+  n_top_hvgs: 3000
+  n_pcs: 30
+  n_neighbors: 15
+  leiden_resolution: 0.8
+  random_state: 42
+
+robustness:
+  pca_dimensions: [15, 30, 50]
+  neighbor_numbers: [10, 15, 30]
+  leiden_resolutions: [0.4, 0.8, 1.2]
+

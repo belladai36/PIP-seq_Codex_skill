@@ -1,0 +1,20 @@
+.DS_Store
+.Rhistory
+*.Rhistory
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Local environment noise
+.env
+.venv/
+venv/
+
+# Analysis outputs
+results/
+figures/
+logs/
+
+# Large or local data files
+data/raw_fastq/
+data/reference/

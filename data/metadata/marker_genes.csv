@@ -1,0 +1,9 @@
+cell_type,gene
+photosynthetic_cell,RBCS
+photosynthetic_cell,LHCB1
+meristem_like_cell,STM
+meristem_like_cell,WUS
+vascular_like_cell,ATHB8
+epidermis_like_cell,ATML1
+unknown,PLACEHOLDER_GENE
+

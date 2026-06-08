@@ -1,0 +1,27 @@
+name: wolffia-scrna
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - fastqc
+  - multiqc
+  - star
+  - samtools
+  - subread
+  - scanpy
+  - anndata
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyyaml
+  - leidenalg
+  - python-igraph
+  - openpyxl
+  - pip:
+      - session-info
+
