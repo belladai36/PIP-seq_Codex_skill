@@ -156,5 +156,5 @@ That would turn the project from an idea into an actual comparative research pla
 - Step 1 `Lock the Reference Set`: completed at the paper level
 - Step 2 `Fill the Marker Template`: completed as a first-pass conservative marker table
 - Step 3 `Add Wolffia Mapping Notes`: completed as a program-level assessment
-- Step 4 `Write Testable Predictions`: next
-- Step 5 `Draft Validation Experiments`: next
+- Step 4 `Write Testable Predictions`: completed as a first-pass prediction table
+- Step 5 `Draft Validation Experiments`: completed as a first-pass validation plan

@@ -118,3 +118,32 @@ The final product of this framework should be a prediction table with columns su
 - expected SMART-seq outcome
 - validation experiment
 - interpretation if prediction fails
+
+## First-Pass Prediction Table
+
+The table below converts the current reference panel and Wolffia mapping notes into explicit, testable predictions.
+
+| predicted_program | expected_status_in_wolffia | supporting_evidence | prediction_confidence | expected_smart_seq_outcome | alternative_explanation | proposed_validation |
+|---|---|---|---|---|---|---|
+| Proliferative / meristematic program | preserved | core cell-cycle machinery is broadly conserved across flowering plants; Wolffia must retain actively growing cells | high | one cluster or small group of cells enriched for cell-cycle, DNA replication, and histone-associated genes | sampled tissue lacked actively dividing cells, or sequencing depth was too shallow to separate a proliferative population | qRT-PCR for division-associated markers and microscopy focused on actively growing regions |
+| Photosynthetic / assimilation program | preserved | Wolffia is a photosynthetic plant and should retain chloroplast- and carbon-fixation-associated transcriptional programs | high | a large assimilation-associated state enriched for LHCB-, RBCS-, and plastid-related expression | photosynthetic signal is broad across most cells and does not resolve into a distinct cluster because the plant body is highly reduced | targeted expression assay for photosynthesis-related genes across growth conditions and microscopy of chloroplast-rich tissues |
+| Vascular-like / transport program | partially preserved or merged | transport genes are likely present, but morphology suggests reduced specialization relative to larger angiosperms | medium | transport-associated markers appear either in a weak subcluster or as a mixed signature embedded within another major state | transport functions are distributed across multifunctional cells rather than specialized cell identities | qRT-PCR panel for transporter candidates plus anatomical imaging or section-based localization if feasible |
+| Developmental transition program | preserved as a continuum rather than discrete cell type | developmental trajectory references suggest transitional states may be more informative than strict labels | medium to high | gradual expression shifts, pseudotime structure, or partially overlapping marker programs rather than many sharply separated clusters | limited cell number or technical noise may blur true discrete states | trajectory re-analysis, hormone perturbation experiments, and follow-up marker testing across induced developmental conditions |
+| Epidermal / surface identity program | reduced or weakly separable | surface-associated programs may still exist, but Wolffia body-plan reduction may weaken layer-specific specialization | medium | subtle enrichment of surface markers, possibly without a clean standalone cluster | surface functions may be merged with photosynthetic or stress-responsive states | targeted marker assay for surface-identity candidates and microscopy-based surface characterization |
+| Reproductive / floral program | condition-specific or absent in baseline samples | floral regulators are biologically relevant but unlikely to be active in ordinary vegetative sampling | low | no strong reproductive cluster in baseline SMART-seq, or only rare cells with floral-transition markers | flowering may require specific induction conditions not represented in the sampled material | repeat sampling under flowering-induction conditions and targeted assays for floral regulators |
+| Aquatic adaptation / stress-responsive program | present as state-like response rather than stable cell type | Wolffia aquatic lifestyle likely involves transport, redox, and stress programs not captured well by standard Arabidopsis labels | medium | stress- or aquatic-interface genes appear as condition-responsive states, gradients, or secondary signatures across several cells | observed stress-like signatures may reflect dissociation artifacts or handling stress instead of true biology | perturbation experiments with nutrient, osmotic, or oxidative conditions and targeted validation of responsive marker modules |
+
+## Interpretation Priority
+
+The first four predictions should drive the earliest analysis once SMART-seq data arrive:
+
+1. proliferative / meristematic
+2. photosynthetic / assimilation
+3. vascular-like / transport
+4. developmental transition
+
+These are the categories most likely to tell us whether Wolffia simplification reflects:
+
+- retention of core programs
+- compression of canonical programs into fewer states
+- or a more continuous developmental organization than in larger model plants

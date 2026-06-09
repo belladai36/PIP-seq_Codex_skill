@@ -193,4 +193,5 @@ Before Wolffia SMART-seq data arrive, the project is also organized around a pre
 - [Candidate cell programs](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/candidate_cell_programs.md>)
 - [First-pass Wolffia mapping notes](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/wolffia_mapping_notes.md>)
 - [Phase 1 public-data workplan](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/phase1_public_data_workplan.md>)
+- [Validation experiment plan](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/validation_experiment_plan.md>)
 # wolffia-single-cell-atlas-pipeline
