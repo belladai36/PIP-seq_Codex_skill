@@ -28,22 +28,22 @@ Use it to track:
 
 | resource_name | species | resource_type | source_database | accession_or_doi | developmental_context | annotation_quality | planned_use | status | notes |
 |---|---|---|---|---|---|---|---|---|---|
-| Arabidopsis reference atlas A | Arabidopsis thaliana | scRNA-seq | GEO / journal supplement | exact accession pending | root or whole-seedling atlas preferred | unknown | primary marker transfer reference | in review | first target for systematic search; exact accession still needs verification |
-| Arabidopsis reference atlas B | Arabidopsis thaliana | scRNA-seq | GEO / journal supplement | exact accession pending | developmental atlas preferred | unknown | backup / comparison reference | in review | prioritize datasets with published marker genes and metadata |
-| Additional plant single-cell atlas | plant species TBD | scRNA-seq | GEO / journal supplement | exact accession pending | tissue-specific | unknown | cross-species comparison | to review | only include if annotation is clear and useful for marker transfer |
-| Genome of the world's smallest flowering plant, Wolffia australiana, helps explain its specialized physiology and unique morphology | Wolffia australiana | genome | Communications Biology | 10.1038/s42003-021-02389-w | species-wide genome and morphology resource | medium | foundational Wolffia background; candidate genome source | usable | important starting point for morphology, genome context, and project justification |
-| The genome of Wolffia australiana facilitates discovery of genetic basis for aquatic adaptation in duckweeds | Wolffia australiana | genome / annotation | The Plant Cell | 10.1093/plcell/koac068 | species-wide genome and comparative duckweed resource | medium | ortholog mapping, annotation context, aquatic adaptation interpretation | usable | high-priority paper for genome choice and comparative biology |
-| Wolffia transcriptome resource | Wolffia australiana | bulk RNA-seq or transcriptome | SRA / GEO / journal supplement | exact accession pending | any available tissue or condition | unknown | expression support for predicted programs | in review | useful even without public Wolffia scRNA-seq |
-| Return of the Lemnaceae: duckweed as a model plant system in the genomics and postgenomics era | duckweed / Lemnaceae | review | The Plant Cell | exact DOI pending | comparative duckweed biology | medium | broad biological and evolutionary context | usable | useful for framing Wolffia as a duckweed model system; exact DOI still needs to be filled in |
-| Small but mighty: The genomics of the world's smallest flowering plants | duckweed / Wolffia | review | Current Opinion in Plant Biology | 10.1016/j.pbi.2021.102153 | comparative genomics and evolutionary reduction | high | biological interpretation and literature grounding | usable | strong review for novelty framing and comparative discussion |
-| Duckweeds: Omnipresent tiny plants with profound applications in agriculture and food | duckweed / Lemnaceae | review | Plants | 10.3390/plants11121641 | comparative duckweed biology and applied context | medium | supplementary background on duckweed diversity and relevance | usable | less central for cell-state prediction, but helpful for broader context |
-| Nutritional value of duckweeds (Lemnaceae) as human food | duckweed / Lemnaceae | review | Frontiers in Chemistry | 10.3389/fchem.2023.1134924 | comparative duckweed physiology and composition | low | optional context only | not prioritized | not directly useful for cell-state prediction, but relevant for duckweed background |
+| Jean-Baptiste Arabidopsis root single-cell reference | Arabidopsis thaliana | scRNA-seq | journal supplement / public repository | paper-level reference locked; exact accession to verify later | root cell-state atlas | high | primary marker transfer reference | usable | locked into Phase 1 reference panel because it supports conservative marker collection |
+| Shulse Arabidopsis root single-cell reference | Arabidopsis thaliana | scRNA-seq | journal supplement / public repository | paper-level reference locked; exact accession to verify later | root cell-type profiling | high | cross-reference for marker stability | usable | reduces dependence on a single annotation scheme |
+| Denyer Arabidopsis developmental root trajectory reference | Arabidopsis thaliana | scRNA-seq | journal supplement / public repository | paper-level reference locked; exact accession to verify later | developmental root trajectories | high | developmental transition and pseudotime reference | usable | especially important for testing the idea of compressed or continuous Wolffia states |
+| Arabidopsis leaf or aerial-tissue single-cell atlas | Arabidopsis thaliana | scRNA-seq | journal supplement / public repository | exact accession pending | photosynthetic or aerial tissue context | medium | optional support for photosynthetic and surface programs | in review | useful secondary layer, but not required to complete first-pass predictions |
+| Genome of the world's smallest flowering plant, Wolffia australiana, helps explain its specialized physiology and unique morphology | Wolffia australiana | genome | Communications Biology | 10.1038/s42003-021-02389-w | species-wide genome and morphology resource | medium | foundational Wolffia background; candidate genome source | usable | anchors morphology, reduction, and genome context |
+| The genome of Wolffia australiana facilitates discovery of genetic basis for aquatic adaptation in duckweeds | Wolffia australiana | genome / annotation | The Plant Cell | 10.1093/plcell/koac068 | species-wide genome and comparative duckweed resource | high | ortholog reasoning, annotation context, aquatic adaptation interpretation | usable | strongest currently locked Wolffia genome-context paper for Phase 1 |
+| Wolffia public transcriptome resource | Wolffia australiana | bulk RNA-seq or transcriptome | SRA / GEO / journal supplement | accession still to verify | any available tissue or condition | medium | expression support for predicted programs | in review | valuable but not required to finish first-pass marker mapping |
+| Small but mighty: The genomics of the world's smallest flowering plants | duckweed / Wolffia | review | Current Opinion in Plant Biology | 10.1016/j.pbi.2021.102153 | comparative genomics and evolutionary reduction | high | novelty framing and comparative interpretation | usable | strong review for the biological logic of reduced morphology versus retained programs |
+| Duckweeds: Omnipresent tiny plants with profound applications in agriculture and food | duckweed / Lemnaceae | review | Plants | 10.3390/plants11121641 | comparative duckweed biology and applied context | medium | broad duckweed background | usable | secondary context for Lemnaceae biology |
+| Nutritional value of duckweeds (Lemnaceae) as human food | duckweed / Lemnaceae | review | Frontiers in Chemistry | 10.3389/fchem.2023.1134924 | comparative duckweed physiology and composition | low | optional context only | not prioritized | not directly useful for cell-state prediction |
 
 ## Near-Term Goals
 
 ### Goal 1
 
-Fill in at least 3 strong public plant single-cell references.
+Lock and document 3 strong public plant single-cell references.
 
 ### Goal 2
 
@@ -60,5 +60,5 @@ This file becomes useful once each candidate resource has enough information for
 ## First-Pass Search Notes
 
 - As of `2026-06-09`, a quick current search did **not** reveal an obvious public `Wolffia australiana` single-cell RNA-seq atlas.
-- This means the project should continue to assume a prediction-first design unless a dedicated Wolffia single-cell dataset is identified later.
-- The next search priority is to verify exact accessions for 1 to 3 public `Arabidopsis thaliana` single-cell reference atlases and any public Wolffia bulk transcriptome datasets.
+- This project should therefore continue with a prediction-first design unless a dedicated Wolffia single-cell dataset is identified later.
+- For Phase 1, the Arabidopsis reference panel is considered locked at the paper level even though some exact repository accessions still need later verification.

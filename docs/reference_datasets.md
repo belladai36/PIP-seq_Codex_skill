@@ -2,101 +2,167 @@
 
 ## Goal
 
-This document defines the public datasets and background resources needed for a prediction-first Wolffia project.
+This document locks the first-pass public reference set for a prediction-first `Wolffia australiana` cell atlas project.
 
-## Resource Categories
+The emphasis is not on collecting every possible dataset. It is on choosing a compact, defensible reference panel that is good enough to support marker transfer, trajectory thinking, and early biological predictions.
 
-### 1. Public Plant Single-Cell RNA-seq References
+## Locked Phase 1 Reference Panel
 
-Primary purpose:
+### Primary Reference 1
 
-- define known plant cell states
-- collect robust marker genes
-- study how developmental trajectories are analyzed in plants
+`Arabidopsis thaliana` root single-cell atlas from Jean-Baptiste et al.
 
-Priority reference systems:
+Why we are using it:
 
-- `Arabidopsis thaliana`
-- other plant single-cell atlases if they are well-annotated and publicly accessible
+- one of the foundational early plant single-cell references
+- useful for canonical root and developmental marker genes
+- good starting point for conservative cell-program definitions
 
-Desired properties of a good reference dataset:
+Best use in this project:
 
-- clear cell-type annotations
-- accessible expression matrix and metadata
-- published marker genes
-- developmental context if possible
+- broad marker collection
+- initial cell-program naming
+- comparison against other Arabidopsis references
 
-## Candidate Reference Cell Programs
+Priority:
 
-These are initial categories to look for in public plant references:
+- high
 
-- meristematic / proliferative cells
-- epidermal cells
-- photosynthetic / mesophyll-like cells
-- vascular-associated cells
-- reproductive or floral precursor states
-- stress-responsive or transitional states
+### Primary Reference 2
 
-## 2. Wolffia-Specific Background Resources
+`Arabidopsis thaliana` root single-cell atlas from Shulse et al.
 
-Primary purpose:
+Why we are using it:
 
-- establish what is already known about Wolffia morphology and development
-- define available genome / annotation resources
-- support ortholog mapping and marker interpretation
+- independent Arabidopsis root reference for cross-checking marker stability
+- helpful for avoiding dependence on a single publication's annotation scheme
+- strengthens confidence in conserved root-associated programs
 
-Needed resource types:
+Best use in this project:
 
-- genome assembly
-- gene annotation
-- published developmental or morphology studies
-- public transcriptome or bulk RNA-seq datasets if available
+- confirm marker consistency across references
+- compare cluster definitions
+- identify robust versus publication-specific markers
 
-## 3. Duckweed / Lemnaceae Comparative Resources
+Priority:
 
-Primary purpose:
+- high
 
-- provide evolutionary context for Wolffia
-- identify gene programs that may be shared across duckweeds
-- distinguish Wolffia-specific features from general duckweed traits
+### Primary Reference 3
 
-Useful targets:
+`Arabidopsis thaliana` developmental root trajectory reference from Denyer et al.
 
-- other duckweed genomes
-- duckweed transcriptomic studies
-- reviews of duckweed development, physiology, and aquatic adaptation
+Why we are using it:
 
-## Planned Data Table
+- especially useful for developmental gradients rather than only discrete cell labels
+- aligns well with our interest in whether Wolffia has compressed or continuous cell states
+- provides a conceptual anchor for pseudotime and trajectory analysis later
 
-For each dataset or resource, record:
+Best use in this project:
 
-- resource name
-- species
-- data type
-- source database
-- accession or DOI
-- developmental context
-- annotation quality
-- likely usefulness for Wolffia prediction
+- developmental transition markers
+- trajectory expectations
+- hypotheses about merged or compressed states in Wolffia
 
-## Current Best Assumption
+Priority:
 
-At the moment, we should assume that:
+- high
 
-- public `Wolffia australiana` single-cell RNA-seq data may not yet be available
-- the project will rely on reference transfer and comparative reasoning rather than direct Wolffia single-cell reanalysis
+## Secondary Reference Layer
 
-That assumption should be revisited after a more systematic search of:
+These are not required to finish Phase 1, but they are useful once the core marker framework is stable.
 
-- GEO
-- SRA
-- ENA
-- ArrayExpress / BioStudies
-- plant single-cell atlas papers and supplementary repositories
+### Secondary Reference A
 
-## Immediate Next Steps
+`Arabidopsis thaliana` leaf or aerial-tissue single-cell references
 
-1. build a spreadsheet of candidate reference datasets
-2. identify 1 to 3 primary reference atlases to use first
-3. collect published marker genes from those atlases
-4. locate Wolffia genome and annotation files for downstream ortholog mapping
+Why they matter:
+
+- improve coverage of photosynthetic programs
+- help distinguish surface, mesophyll-like, and stress-responsive states
+- useful if Wolffia cell states look more frond-like than root-like
+
+Priority:
+
+- medium
+
+### Secondary Reference B
+
+Duckweed or other Lemnaceae transcriptomic resources
+
+Why they matter:
+
+- provide evolutionary context closer to Wolffia than Arabidopsis alone
+- help identify aquatic-adaptation signatures
+- reduce the risk of over-transferring terrestrial plant labels
+
+Priority:
+
+- medium
+
+## Wolffia-Specific Resource Set
+
+These are locked as the Wolffia background layer for Phase 1.
+
+### Resource 1
+
+`Genome of the world's smallest flowering plant, Wolffia australiana, helps explain its specialized physiology and unique morphology`
+
+Use:
+
+- morphology background
+- genome context
+- project framing
+
+### Resource 2
+
+`The genome of Wolffia australiana facilitates discovery of genetic basis for aquatic adaptation in duckweeds`
+
+Use:
+
+- genome and annotation context
+- ortholog reasoning
+- aquatic adaptation interpretation
+
+### Resource 3
+
+Available public Wolffia or duckweed transcriptome resources, if they can be tied to a clear accession or supplement
+
+Use:
+
+- expression plausibility checks
+- support for predicted program presence
+- priority genes for later validation
+
+## Why This Reference Set Is Enough for Phase 1
+
+This panel is intentionally small, but it covers the main needs of the project:
+
+- canonical plant marker programs
+- developmental trajectories
+- photosynthetic and surface-state follow-up
+- Wolffia-specific evolutionary context
+
+That is enough to complete the first serious round of:
+
+- marker collection
+- Wolffia mapping notes
+- hypothesis generation
+
+## Reference Strategy Rules
+
+To keep the project biologically careful, we will follow these rules:
+
+1. use broad cell programs before fine-grained labels
+2. prefer markers supported by more than one Arabidopsis reference when possible
+3. treat root-derived labels as transferable programs, not literal Wolffia organs
+4. mark Wolffia mappings as `high`, `medium`, or `low` confidence rather than pretending orthology is fully resolved
+5. leave room for Wolffia-specific or aquatic-specific states that do not map neatly to Arabidopsis
+
+## Phase 1 Output Expected from This Reference Set
+
+Using this locked panel, we should now be able to produce:
+
+- a populated marker template
+- first-pass Wolffia mapping notes
+- ranked predictions for preserved, merged, reduced, or novel programs

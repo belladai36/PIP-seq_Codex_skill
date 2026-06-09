@@ -150,3 +150,11 @@ By the end of the next work block, we should aim to have:
 - first-pass predictions for 3 to 4 major cell programs
 
 That would turn the project from an idea into an actual comparative research plan.
+
+## Current Status
+
+- Step 1 `Lock the Reference Set`: completed at the paper level
+- Step 2 `Fill the Marker Template`: completed as a first-pass conservative marker table
+- Step 3 `Add Wolffia Mapping Notes`: completed as a program-level assessment
+- Step 4 `Write Testable Predictions`: next
+- Step 5 `Draft Validation Experiments`: next
