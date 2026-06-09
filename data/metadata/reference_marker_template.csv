@@ -1,0 +1,8 @@
+program_category,reference_species,reference_dataset,reference_gene,reference_gene_role,wolffia_ortholog_candidate,mapping_confidence,expected_wolffia_pattern,priority,notes
+proliferative_or_meristematic,TBD,TBD,TBD,TBD,TBD,unknown,TBD,high,TBD
+epidermal_or_surface_identity,TBD,TBD,TBD,TBD,TBD,unknown,TBD,medium,TBD
+photosynthetic_or_assimilation,TBD,TBD,TBD,TBD,TBD,unknown,TBD,high,TBD
+vascular_like_or_transport,TBD,TBD,TBD,TBD,TBD,unknown,TBD,high,TBD
+developmental_transition,TBD,TBD,TBD,TBD,TBD,unknown,TBD,high,TBD
+reproductive_or_floral,TBD,TBD,TBD,TBD,TBD,unknown,TBD,medium,TBD
+aquatic_adaptation_or_stress,TBD,TBD,TBD,TBD,TBD,unknown,TBD,medium,TBD
