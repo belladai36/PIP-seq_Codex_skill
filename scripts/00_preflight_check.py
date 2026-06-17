@@ -27,6 +27,7 @@ def main() -> None:
     config = load_config(args.config)
     paths = config["paths"]
     public_ref = config.get("public_reference_analysis", {})
+    wolffia_public_ref = config.get("wolffia_public_reference_analysis", {})
 
     missing = 0
 
@@ -59,6 +60,15 @@ def main() -> None:
                 ("test_h5ad", project_path(public_ref["test_h5ad"])),
                 ("label_rules_csv", project_path(public_ref["label_rules_csv"])),
                 ("program_markers_csv", project_path(public_ref["program_markers_csv"])),
+            ],
+        )
+
+    if wolffia_public_ref:
+        missing += check_paths(
+            "Wolffia public reference workflow",
+            [
+                ("manifest_csv", project_path(wolffia_public_ref["manifest_csv"])),
+                ("label_template_csv", project_path(wolffia_public_ref["label_template_csv"])),
             ],
         )
 

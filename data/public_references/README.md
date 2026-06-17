@@ -31,3 +31,12 @@ Preparation script
 Notes
 - `GSE227564` includes metadata and Seurat cluster assignments.
 - `GSE141730` is a 10x HDF5 matrix and does not come with cell-type labels in the downloaded file.
+
+Wolffia public-reference extension
+- A Wolffia-native reference layer is now scaffolded through:
+  - `data/metadata/wolffia_public_dataset_manifest.csv`
+  - `data/metadata/wolffia_public_label_template.csv`
+  - `scripts/12_prepare_wolffia_public_references.py`
+- Intended roles:
+  - `PRJNA1124135` -> first Wolffia-native training / fine-tuning candidate
+  - `PRJNA809022` -> validation / secondary reference candidate
