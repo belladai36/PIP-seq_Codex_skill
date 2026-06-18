@@ -19,10 +19,10 @@ GitHub should contain:
 
 In this project, examples include:
 
-- [scripts](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts)
-- [config/config.yaml](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/config/config.yaml)
-- [data/metadata/wolffia_public_dataset_manifest.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_dataset_manifest.csv)
-- [data/metadata/wolffia_public_run_accessions.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_run_accessions.csv)
+- [scripts](../scripts)
+- [config/config.yaml](../config/config.yaml)
+- [data/metadata/wolffia_public_dataset_manifest.csv](../data/metadata/wolffia_public_dataset_manifest.csv)
+- [data/metadata/wolffia_public_run_accessions.csv](../data/metadata/wolffia_public_run_accessions.csv)
 
 ## What should stay outside GitHub
 
@@ -58,7 +58,7 @@ Use external or cloud storage for:
 
 The repo now supports this through:
 
-- [docs/wolffia_external_storage_setup.md](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/docs/wolffia_external_storage_setup.md)
+- [docs/wolffia_external_storage_setup.md](wolffia_external_storage_setup.md)
 - `WOLFFIA_PUBLIC_RAW_ROOT`
 - `wolffia_public_reference_analysis.external_raw_root`
 

@@ -24,7 +24,7 @@ export WOLFFIA_PUBLIC_RAW_ROOT="/Volumes/YourDrive/wolffia_public_raw"
 
 Edit:
 
-[config/config.yaml](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/config/config.yaml)
+[config/config.yaml](../config/config.yaml)
 
 Set:
 
@@ -50,8 +50,8 @@ wolffia_public_reference_analysis:
 
 ## Updated scripts that use the override
 
-- [scripts/13_wolffia_download_helper.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/13_wolffia_download_helper.py)
-- [scripts/12_prepare_wolffia_public_references.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/12_prepare_wolffia_public_references.py)
+- [scripts/13_wolffia_download_helper.py](../scripts/13_wolffia_download_helper.py)
+- [scripts/12_prepare_wolffia_public_references.py](../scripts/12_prepare_wolffia_public_references.py)
 
 ## Example download command to an external drive
 

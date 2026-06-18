@@ -49,9 +49,9 @@ Arabidopsis is still useful as a biological scaffold, but Wolffia training is be
 
 ## New repo pieces added for this
 
-- manifest: [data/metadata/wolffia_public_dataset_manifest.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_dataset_manifest.csv)
-- broad-label template: [data/metadata/wolffia_public_label_template.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_label_template.csv)
-- preparation script: [scripts/12_prepare_wolffia_public_references.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/12_prepare_wolffia_public_references.py)
+- manifest: [data/metadata/wolffia_public_dataset_manifest.csv](../data/metadata/wolffia_public_dataset_manifest.csv)
+- broad-label template: [data/metadata/wolffia_public_label_template.csv](../data/metadata/wolffia_public_label_template.csv)
+- preparation script: [scripts/12_prepare_wolffia_public_references.py](../scripts/12_prepare_wolffia_public_references.py)
 
 ## What this script does
 
@@ -77,8 +77,8 @@ This has now been refined one step further:
 
 See:
 
-- [docs/wolffia_public_download_layout.md](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/docs/wolffia_public_download_layout.md)
-- [data/metadata/wolffia_public_run_accessions.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_run_accessions.csv)
+- [docs/wolffia_public_download_layout.md](wolffia_public_download_layout.md)
+- [data/metadata/wolffia_public_run_accessions.csv](../data/metadata/wolffia_public_run_accessions.csv)
 
 ## Next execution step
 

@@ -53,15 +53,15 @@ The upstream FASTQ steps expect these command-line tools in your `PATH`:
 
 ## Inputs You Need
 
-Edit [config/config.yaml](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/config/config.yaml>) before running.
+Edit [config/config.yaml](config/config.yaml) before running.
 
 Minimum inputs:
 
 - Paired-end or single-end SMART-seq FASTQ files, one library per cell.
 - A Wolffia genome FASTA file.
 - A gene annotation GTF file. Convert GFF3 to GTF first if needed.
-- A sample sheet like [data/metadata/samples.csv](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/data/metadata/samples.csv>).
-- Optional known marker genes like [data/metadata/marker_genes.csv](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/data/metadata/marker_genes.csv>).
+- A sample sheet like [data/metadata/samples.csv](data/metadata/samples.csv).
+- Optional known marker genes like [data/metadata/marker_genes.csv](data/metadata/marker_genes.csv).
 
 ## Run Step by Step
 
@@ -179,10 +179,10 @@ Before Wolffia data arrive, you can run a public-reference statistical workflow 
 
 Starter inputs live in:
 
-- [data/metadata/public_reference_program_markers.csv](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/data/metadata/public_reference_program_markers.csv>)
-- [data/metadata/public_reference_label_rules.csv](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/data/metadata/public_reference_label_rules.csv>)
+- [data/metadata/public_reference_program_markers.csv](data/metadata/public_reference_program_markers.csv)
+- [data/metadata/public_reference_label_rules.csv](data/metadata/public_reference_label_rules.csv)
 
-Configure the dataset paths under `public_reference_analysis` in [config/config.yaml](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/config/config.yaml>), then run:
+Configure the dataset paths under `public_reference_analysis` in [config/config.yaml](config/config.yaml), then run:
 
 ```bash
 python scripts/10_public_reference_statistical_prediction.py --config config/config.yaml
@@ -232,13 +232,13 @@ Expected outputs include:
 
 Before Wolffia SMART-seq data arrive, the project is also organized around a prediction-first comparative biology workflow:
 
-- [Project aims](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/project_aims.md>)
-- [Reference datasets](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/reference_datasets.md>)
-- [Dataset inventory](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/dataset_inventory.md>)
-- [Prediction framework](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/prediction_framework.md>)
-- [Statistical prediction strategy](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/statistical_prediction_strategy.md>)
-- [Candidate cell programs](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/candidate_cell_programs.md>)
-- [First-pass Wolffia mapping notes](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/wolffia_mapping_notes.md>)
-- [Phase 1 public-data workplan](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/phase1_public_data_workplan.md>)
-- [Validation experiment plan](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/validation_experiment_plan.md>)
+- [Project aims](docs/project_aims.md)
+- [Reference datasets](docs/reference_datasets.md)
+- [Dataset inventory](docs/dataset_inventory.md)
+- [Prediction framework](docs/prediction_framework.md)
+- [Statistical prediction strategy](docs/statistical_prediction_strategy.md)
+- [Candidate cell programs](docs/candidate_cell_programs.md)
+- [First-pass Wolffia mapping notes](docs/wolffia_mapping_notes.md)
+- [Phase 1 public-data workplan](docs/phase1_public_data_workplan.md)
+- [Validation experiment plan](docs/validation_experiment_plan.md)
 # wolffia-single-cell-atlas-pipeline

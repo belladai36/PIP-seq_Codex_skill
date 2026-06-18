@@ -47,9 +47,9 @@ Important note:
 ## Repo files updated for this
 
 - manifest:
-  [data/metadata/wolffia_public_dataset_manifest.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_dataset_manifest.csv)
+  [data/metadata/wolffia_public_dataset_manifest.csv](../data/metadata/wolffia_public_dataset_manifest.csv)
 - run table:
-  [data/metadata/wolffia_public_run_accessions.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/wolffia_public_run_accessions.csv)
+  [data/metadata/wolffia_public_run_accessions.csv](../data/metadata/wolffia_public_run_accessions.csv)
 
 ## Recommended local directory structure
 
@@ -90,4 +90,4 @@ Because these are raw sequencing runs:
 3. keep `PRJNA809022` as the secondary download after the first Wolffia workflow is proven
 4. generate a matrix or count object for `PRJNA1124135`
 5. update the manifest to point to that matrix
-6. run [scripts/12_prepare_wolffia_public_references.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/12_prepare_wolffia_public_references.py)
+6. run [scripts/12_prepare_wolffia_public_references.py](../scripts/12_prepare_wolffia_public_references.py)

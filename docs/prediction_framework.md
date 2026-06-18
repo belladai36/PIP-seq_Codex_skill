@@ -172,4 +172,4 @@ Prediction in this project should now be interpreted in two layers:
 2. statistical prediction:
    what structures are consistently recoverable in existing public plant single-cell data and therefore most likely to transfer to Wolffia
 
-The companion document [Statistical prediction strategy](</Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/docs/statistical_prediction_strategy.md>) defines the quantitative layer of this plan.
+The companion document [Statistical prediction strategy](statistical_prediction_strategy.md) defines the quantitative layer of this plan.

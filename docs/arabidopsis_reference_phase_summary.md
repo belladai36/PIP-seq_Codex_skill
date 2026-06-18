@@ -6,8 +6,8 @@ We used two public Arabidopsis single-cell datasets as a reference-and-transfer 
 
 - Training reference: `GSE227564_callus`
 - Transfer target: `GSE141730_root_phosphate`
-- Main script: [scripts/10_public_reference_statistical_prediction.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/10_public_reference_statistical_prediction.py)
-- Marker panel: [data/metadata/public_reference_program_markers.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/public_reference_program_markers.csv)
+- Main script: [scripts/10_public_reference_statistical_prediction.py](../scripts/10_public_reference_statistical_prediction.py)
+- Marker panel: [data/metadata/public_reference_program_markers.csv](../data/metadata/public_reference_program_markers.csv)
 
 ## Important improvement
 
@@ -121,5 +121,5 @@ Concretely:
 
 The current validated candidate list and recommended order are documented in:
 
-- [docs/arabidopsis_validation_dataset_selection.md](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/docs/arabidopsis_validation_dataset_selection.md)
-- [data/metadata/arabidopsis_public_dataset_manifest.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/arabidopsis_public_dataset_manifest.csv)
+- [docs/arabidopsis_validation_dataset_selection.md](arabidopsis_validation_dataset_selection.md)
+- [data/metadata/arabidopsis_public_dataset_manifest.csv](../data/metadata/arabidopsis_public_dataset_manifest.csv)

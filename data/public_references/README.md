@@ -5,7 +5,7 @@ Expected files
 - `arabidopsis_reference_test.h5ad`
 
 These paths are defined in:
-- `/Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/config/config.yaml`
+- `config/config.yaml`
 
 Current status
 - The Python environment is working in PyCharm.
@@ -26,7 +26,7 @@ Current prepared outputs
 - `processed/GSE141730_root_phosphate.h5ad`
 
 Preparation script
-- `/Users/bella/Documents/Wolffia Single-Cell Atlas Pipeline Before the Data Arrive/scripts/11_prepare_public_references.py`
+- `scripts/11_prepare_public_references.py`
 
 Notes
 - `GSE227564` includes metadata and Seurat cluster assignments.

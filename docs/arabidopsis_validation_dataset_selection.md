@@ -27,7 +27,7 @@ We want the next dataset to satisfy as many of these conditions as possible:
 
 ## Verified candidates
 
-The candidate list is recorded in [data/metadata/arabidopsis_public_dataset_manifest.csv](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/data/metadata/arabidopsis_public_dataset_manifest.csv).
+The candidate list is recorded in [data/metadata/arabidopsis_public_dataset_manifest.csv](../data/metadata/arabidopsis_public_dataset_manifest.csv).
 
 ### 1. GSE121619
 

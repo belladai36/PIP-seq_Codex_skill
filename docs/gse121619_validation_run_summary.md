@@ -6,9 +6,9 @@ We added `GSE121619` as a second Arabidopsis validation target using the process
 
 Files and scripts used:
 
-- [scripts/14_extract_gse121619_from_monocle.R](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/14_extract_gse121619_from_monocle.R)
-- [scripts/15_prepare_gse121619_h5ad.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/15_prepare_gse121619_h5ad.py)
-- [config/public_reference_gse121619.yaml](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/config/public_reference_gse121619.yaml)
+- [scripts/14_extract_gse121619_from_monocle.R](../scripts/14_extract_gse121619_from_monocle.R)
+- [scripts/15_prepare_gse121619_h5ad.py](../scripts/15_prepare_gse121619_h5ad.py)
+- [config/public_reference_gse121619.yaml](../config/public_reference_gse121619.yaml)
 - source dataset: [GSE121619](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121619)
 
 ## Intake result

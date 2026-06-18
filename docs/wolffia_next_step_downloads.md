@@ -36,7 +36,7 @@ So the efficient sequence is:
 
 Use:
 
-[scripts/13_wolffia_download_helper.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/13_wolffia_download_helper.py)
+[scripts/13_wolffia_download_helper.py](../scripts/13_wolffia_download_helper.py)
 
 ### Example
 

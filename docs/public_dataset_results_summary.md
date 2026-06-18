@@ -6,13 +6,13 @@ I reran the public plant reference workflow using:
 
 - **Training dataset:** `GSE227564_callus`
 - **Test dataset:** `GSE141730_root_phosphate`
-- **Script:** [scripts/10_public_reference_statistical_prediction.py](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/scripts/10_public_reference_statistical_prediction.py)
-- **Config:** [config/config.yaml](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/config/config.yaml)
+- **Script:** [scripts/10_public_reference_statistical_prediction.py](../scripts/10_public_reference_statistical_prediction.py)
+- **Config:** [config/config.yaml](../config/config.yaml)
 
 The rerun finished successfully on **June 15, 2026** and refreshed the outputs in:
 
-- [results/public_reference](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/results/public_reference)
-- [figures/public_reference](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/figures/public_reference)
+- local output directory: `results/public_reference`
+- local figure directory: `figures/public_reference`
 
 ## Core numerical results
 
@@ -108,7 +108,7 @@ Interpretation:
 
 ### 1. Training PCA
 
-![Training PCA](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/figures/public_reference/train_broad_program_pca.png)
+Local figure file: `figures/public_reference/train_broad_program_pca.png`
 
 What this figure is:
 
@@ -129,7 +129,7 @@ Important limitation:
 
 ### 2. Training Heatmap
 
-![Training Heatmap](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/figures/public_reference/train_program_score_heatmap.png)
+Local figure file: `figures/public_reference/train_program_score_heatmap.png`
 
 What this figure is:
 
@@ -150,7 +150,7 @@ Meaning:
 
 ### 3. Training Boxplots
 
-![Training Boxplots](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/figures/public_reference/train_program_score_boxplots.png)
+Local figure file: `figures/public_reference/train_program_score_boxplots.png`
 
 What this figure is:
 
@@ -167,7 +167,7 @@ Interpretation:
 
 ### 4. Test PCA with predicted labels
 
-![Predicted Test PCA](/Users/bella/Documents/Wolffia%20Single-Cell%20Atlas%20Pipeline%20Before%20the%20Data%20Arrive/figures/public_reference/test_predicted_broad_program_pca.png)
+Local figure file: `figures/public_reference/test_predicted_broad_program_pca.png`
 
 What this figure is:
 
