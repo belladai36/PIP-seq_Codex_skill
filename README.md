@@ -198,6 +198,31 @@ python scripts/10_public_reference_statistical_prediction.py --config config/pub
 
 This keeps the main config unchanged while letting you test a second Arabidopsis validation target.
 
+To prepare the broader Arabidopsis root atlas `GSE123818` from GEO CSV matrices:
+
+```bash
+python scripts/16_prepare_gse123818_h5ad.py --split both
+python scripts/10_public_reference_statistical_prediction.py --config config/public_reference_gse123818.yaml
+```
+
+This gives us a larger unlabeled developmental target to test whether the stress-like program still dominates during cross-dataset transfer.
+
+To promote the `GSE123818 WT` atlas into a root-derived training reference:
+
+```bash
+python scripts/17_cluster_public_reference.py \
+  --input data/public_references/processed/GSE123818_wt_root.h5ad \
+  --output data/public_references/processed/GSE123818_wt_root_clustered.h5ad
+
+python scripts/10_public_reference_statistical_prediction.py \
+  --config config/public_reference_gse123818_wt_train_to_shr.yaml
+
+python scripts/10_public_reference_statistical_prediction.py \
+  --config config/public_reference_gse123818_wt_train_to_gse121619.yaml
+```
+
+This tests whether a root-derived reference reduces the strong stress-like collapse we saw when training on callus.
+
 Expected outputs include:
 
 - `results/public_reference/cross_dataset_metrics.json`
