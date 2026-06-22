@@ -48,6 +48,41 @@ New configs:
 - reproductive/floral: `7.05%`
 - photosynthetic: `0.25%`
 
+## Marker-Refinement Rerun
+
+We then refined the broad-program marker panel to make it more root-aware and tightened the cluster pseudo-label thresholds:
+
+- expanded proliferative markers
+- expanded vascular markers
+- expanded developmental-transition markers
+- replaced weak epidermal markers with more root-relevant epidermal markers
+- expanded stress markers
+- required a minimum top score of `0.05`
+- required a minimum score margin of `0.02`
+
+### Refined `WT -> SHR`
+
+- stress-like: `93.81%`
+- proliferative: `6.19%`
+
+### Refined `WT -> GSE121619`
+
+- stress-like: `76.75%`
+- proliferative: `23.25%`
+
+### What improved
+
+- spurious `reproductive_or_floral` transfer disappeared
+- spurious photosynthetic transfer into root-heavy targets disappeared
+- low-signal or ambiguous training clusters were more often marked `unmapped`
+
+### What got worse
+
+- the dominant stress-like mapping returned strongly
+- root-state diversity became less visible in the final transfer output
+
+This means the stricter thresholds helped remove obvious annotation artifacts, but the current `aquatic_adaptation_or_stress` module is still too broad and is capturing too much of the root atlas.
+
 ## Interpretation
 
 This is the clearest sign yet that the original stress-dominant outcome was heavily influenced by the training reference.
@@ -67,6 +102,7 @@ There are still signs that the marker system is too coarse:
 - `reproductive_or_floral` appears in root datasets, which is unlikely to be literal
 - `developmental_transition` remains underused
 - several root identities are still being compressed into a few broad programs
+- the current stress module likely mixes water transport / membrane-interface biology with genuine abiotic-stress response
 
 ## Practical Conclusion
 
@@ -86,4 +122,8 @@ The next high-value step is to refine the marker panel and broad program ontolog
 - developmental transition
 - stress response
 
-Once those are tightened, we should rerun the same root-derived reference tests before moving on to Wolffia prediction transfer.
+The most specific next move is now:
+
+1. split `aquatic_adaptation_or_stress` into a narrower abiotic-stress program and a separate transport / interface-oriented program
+2. rerun the same root-derived reference tests
+3. only then move on to Wolffia prediction transfer

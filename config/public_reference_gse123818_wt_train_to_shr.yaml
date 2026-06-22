@@ -18,5 +18,5 @@ public_reference_analysis:
   random_state: 42
   max_train_cells: 3000
   max_test_cells: 1099
-  infer_min_score: -1.0
-  infer_min_margin: 0.0
+  infer_min_score: 0.05
+  infer_min_margin: 0.02
