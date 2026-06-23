@@ -5,4 +5,5 @@ dataset_name,label_pattern,broad_program,priority,notes
 *,transition|elongation|differentiat|auxin|trajectory,developmental_transition,4,starter_regex_for_continuum_states
 *,epiderm|non.?hair|root.?hair|trichoblast|atrichoblast|guard,epidermal_or_surface_identity,5,starter_regex_for_surface_states
 *,floral|reproductive|pollen|ovule|stamen|carpel|flower,reproductive_or_floral,6,starter_regex_for_reproductive_states
-*,stress|heat|wound|redox|oxidative|hypoxia|aquatic,aquatic_adaptation_or_stress,7,starter_regex_for_dynamic_state_labels
+*,aquaporin|water|osmotic|membrane|interface|transport,transport_interface_or_water_balance,7,starter_regex_for_interface_transport_states
+*,stress|heat|wound|redox|oxidative|hypoxia|cold|dehydration,abiotic_stress_response,8,starter_regex_for_abiotic_stress_states

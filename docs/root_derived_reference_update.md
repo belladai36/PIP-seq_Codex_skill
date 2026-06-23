@@ -127,3 +127,50 @@ The most specific next move is now:
 1. split `aquatic_adaptation_or_stress` into a narrower abiotic-stress program and a separate transport / interface-oriented program
 2. rerun the same root-derived reference tests
 3. only then move on to Wolffia prediction transfer
+
+## Stress-Module Split Rerun
+
+We then split the old `aquatic_adaptation_or_stress` category into:
+
+- `transport_interface_or_water_balance`
+- `abiotic_stress_response`
+
+This was meant to test whether the old stress-heavy behavior was partly caused by mixing membrane/interface biology with true stress-response biology.
+
+### Split `WT -> SHR`
+
+- `transport_interface_or_water_balance`: `46.22%`
+- `abiotic_stress_response`: `43.86%`
+- `proliferative_or_meristematic`: `9.92%`
+
+### Split `WT -> GSE121619`
+
+- `transport_interface_or_water_balance`: `48.05%`
+- `abiotic_stress_response`: `34.50%`
+- `proliferative_or_meristematic`: `17.45%`
+
+### What improved
+
+- the old stress-heavy bucket no longer behaves like a single undifferentiated sink
+- the root-derived reference now separates one branch of interface/water-balance biology from one branch of broader abiotic-stress biology
+- proliferative cells remain recoverable as a smaller but consistent population
+
+### What this suggests
+
+This is a more believable outcome than the previous monolithic stress mapping.
+
+It suggests that at least part of what we first called "stress-like" was really capturing:
+
+- water transport / membrane-interface programs
+- osmotic or interface-associated physiology
+- and only partly genuine stress-response modules
+
+That is directly relevant to Wolffia, because an aquatic plant may also show strong interface- and water-balance-associated programs that should not automatically be interpreted as generic stress artifacts.
+
+## Updated Best Next Move
+
+Now the best next step is to:
+
+1. review whether `transport_interface_or_water_balance` is still partly overlapping with vascular/transport markers
+2. strengthen vascular and epidermal separation if needed
+3. then move toward Wolffia transfer with this improved program set
