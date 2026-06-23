@@ -103,3 +103,19 @@ The immediate computational target is:
 
 > build a first Wolffia-native reference from `PRJNA1124135`, then test whether its broad states
 > replicate in `PRJNA809022`.
+
+## Current Interpretation Guardrail
+
+Before that Wolffia-native reference is built, the current Arabidopsis-derived transfer layer should be treated as a **program-level scaffold** rather than a literal tissue-label system.
+
+See:
+
+- [Wolffia first transfer note](wolffia_first_transfer_note.md)
+- [Root-derived reference update](root_derived_reference_update.md)
+
+In particular, the first Wolffia-facing pass should preserve the distinction between:
+
+- `transport_interface_or_water_balance`
+- `abiotic_stress_response`
+
+because the latest Arabidopsis reruns suggest that those two signals are biologically more interpretable when they are not collapsed into one generic stress category.

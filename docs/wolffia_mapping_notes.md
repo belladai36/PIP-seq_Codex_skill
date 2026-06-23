@@ -166,26 +166,55 @@ Mapping confidence:
 
 - low
 
-### 7. Aquatic Adaptation / Stress-Responsive Programs
+### 7. Transport / Interface / Water-Balance Programs
 
 Current support:
 
-- potentially novel and important
-- much harder to define with standard Arabidopsis cell labels alone
+- potentially important and now better supported than before
+- recent Arabidopsis transfer tuning suggests one broad component behaves more like interface or water-balance biology than generic stress
 
 Useful reference markers:
 
 - aquaporin families
-- redox / ROS response modules
-- duckweed comparative stress and transport signatures
+- membrane water-balance modules
+- duckweed comparative transport and aquatic-interface signatures
 
 First-pass Wolffia expectation:
 
-- more likely to behave as condition-responsive states than as classic stable cell types
+- likely one broad state or gradient rather than a textbook organ-specific cell type
+- may be especially visible in an aquatic plant even when classical vascular labels are weak
 
 Interpretation:
 
-- this is a major opportunity for genuinely new biology, but also a place where false certainty would be risky
+- this is now one of the most interesting places where Wolffia could differ from standard Arabidopsis interpretations without being an artifact
+- strong interface-associated signal should not automatically be dismissed as generic stress noise
+
+Mapping confidence:
+
+- medium
+
+### 8. Abiotic Stress-Response Programs
+
+Current support:
+
+- plausible and biologically important
+- recent Arabidopsis reruns suggest part of the old broad stress bucket was genuinely stress-like, but only part
+
+Useful reference markers:
+
+- `ZAT12`
+- `RD29A`
+- `DREB2A`
+- heat, cold, redox, and dehydration response modules
+
+First-pass Wolffia expectation:
+
+- more likely a dynamic state than a stable identity
+- may appear only in subsets of cells or under specific handling or environmental conditions
+
+Interpretation:
+
+- if strong stress-response signal appears broadly, we should check whether it reflects handling artifacts, real abiotic response, or overlap with aquatic interface biology
 
 Mapping confidence:
 
@@ -203,11 +232,12 @@ Most ready for first-pass prediction:
 Worth tracking, but lower-confidence for immediate interpretation:
 
 1. epidermal / surface identity
-2. aquatic adaptation / stress-responsive
-3. reproductive / floral
+2. transport / interface / water-balance
+3. abiotic stress-response
+4. reproductive / floral
 
 ## Bottom Line
 
 At this stage, the project already supports a credible first-pass claim:
 
-`Wolffia australiana` is likely to retain strongly conserved proliferative and photosynthetic programs, may show partially merged transport-associated and developmental transition programs, and may contain aquatic or reduced-body-plan states that do not map neatly onto canonical Arabidopsis cell labels.
+`Wolffia australiana` is likely to retain strongly conserved proliferative and photosynthetic programs, may show partially merged transport-associated and developmental transition programs, and may also contain interface- or water-balance-associated states that do not map neatly onto canonical Arabidopsis cell labels. Any apparent stress-like signatures should be interpreted cautiously and separated from broader aquatic interface biology when possible.
