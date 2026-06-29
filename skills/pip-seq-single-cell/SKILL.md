@@ -80,6 +80,20 @@ If the task is specifically about `Wolffia`, use:
 
 Treat it as an example adaptation layer, not as a universal rule for all `PIP-seq` projects.
 
+### 5. Use prompt patterns when the request is underspecified
+
+If the user has the right topic but a vague request shape, read:
+
+- `references/prompt-patterns.md`
+
+Use it to steer the work toward the right mode:
+
+- protocol design
+- computational workflow planning
+- QC or clustering interpretation
+- cross-species transfer reasoning
+- repository adaptation
+
 ## Scientific Guardrails
 
 - Do not describe `PIP-seq` as if it were `SMART-seq`.
@@ -122,4 +136,5 @@ Read these files as needed:
 - `references/primary-literature.md`
 - `references/project-adaptation.md`
 - `references/validation-patterns.md`
+- `references/prompt-patterns.md`
 - `references/wolffia-case-study.md`

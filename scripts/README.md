@@ -54,6 +54,12 @@ These generate the polished project documents:
 7. `24_generate_detailed_protocol_pdf.py`
 8. `25_build_pipseq_protocol_docx.py`
 
+### 5. Skill install helper
+
+This helper installs the reusable Codex skill from this repository into the local Codex skills directory:
+
+1. `26_install_codex_skill.sh`
+
 ## 02. Most Important Scripts Right Now
 
 If you only want the current project core, focus on:
@@ -72,3 +78,4 @@ Environment note:
 - `pipeline_utils.py`: shared helper functions
 - `run_all.sh`: convenience runner for the legacy FASTQ scaffold
 - `00_preflight_check.py`: quick input and checkpoint sanity check
+- `26_install_codex_skill.sh`: copies the reusable `pip-seq-single-cell` skill into `~/.codex/skills`
