@@ -60,6 +60,7 @@ The clearest current progress summary is here:
 │   ├── reference/                   # Genome FASTA, GTF/GFF, STAR index
 │   └── metadata/                    # Sample/cell metadata and marker tables
 ├── docs/                            # Project narrative, plans, results, and protocols
+├── skills/                          # Repo-local Codex skills for project-specific workflows
 ├── scripts/
 │   ├── README.md                    # Script order and what each group does
 │   ├── 00_fastq_qc.sh               # FastQC + MultiQC
@@ -85,6 +86,7 @@ The clearest current progress summary is here:
 ## 5. Folder Guide
 
 - [docs/README.md](docs/README.md): best entry point for understanding the project
+- [skills/README.md](skills/README.md): repo-local Codex skills and their entry points
 - [scripts/README.md](scripts/README.md): best entry point for running code in the right order
 - [config/README.md](config/README.md): best entry point for choosing config files
 - [notebooks/README.md](notebooks/README.md): optional exploratory analysis notes
