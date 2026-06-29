@@ -1,0 +1,7 @@
+interface:
+  display_name: "PIP-seq Single-Cell"
+  short_description: "Reusable PIP-seq planning and QC"
+  default_prompt: "Use $pip-seq-single-cell to help me plan, validate, or interpret a PIP-seq single-cell workflow."
+
+policy:
+  allow_implicit_invocation: true
