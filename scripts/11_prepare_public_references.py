@@ -2,6 +2,10 @@
 from __future__ import annotations
 
 from pathlib import Path
+import os
+
+os.environ.setdefault("NUMBA_CACHE_DIR", "/private/tmp/numba-cache")
+os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/mplconfig")
 
 import anndata as ad
 import pandas as pd

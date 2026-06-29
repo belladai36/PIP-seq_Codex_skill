@@ -8,7 +8,7 @@ This repository is a beginner-friendly, prediction-first scaffold for a `Wolffia
 
 The paths are placeholders. Replace the example FASTQ, genome, annotation, and metadata paths with your project files when they are available.
 
-## Start Here
+## 1. Start Here
 
 If you are opening this repository for the first time, these are the most useful entry points:
 
@@ -17,7 +17,7 @@ If you are opening this repository for the first time, these are the most useful
 3. [Docs guide](docs/README.md)
 4. [Wolffia first transfer note](docs/wolffia_first_transfer_note.md)
 
-## Recommended Reading Order
+## 2. Recommended Reading Order
 
 For most viewers, the easiest way through the repository is:
 
@@ -28,7 +28,7 @@ For most viewers, the easiest way through the repository is:
 5. [Wolffia first transfer note](docs/wolffia_first_transfer_note.md) for how the model will be applied to Wolffia
 6. [Wolffia data-generation protocol](docs/wolffia_data_generation_protocol.md) for the planned experimental route
 
-## Current Status
+## 3. Current Status
 
 The project is currently in the **Wolffia-facing transfer preparation stage**.
 
@@ -48,7 +48,7 @@ The clearest current progress summary is here:
 
 - [Project progress summary](docs/project_progress_summary.md)
 
-## Project Layout
+## 4. Project Layout
 
 ```text
 .
@@ -82,7 +82,7 @@ The clearest current progress summary is here:
 └── output/                          # Shareable PDF and DOCX exports
 ```
 
-## Folder Guide
+## 5. Folder Guide
 
 - [docs/README.md](docs/README.md): best entry point for understanding the project
 - [scripts/README.md](scripts/README.md): best entry point for running code in the right order
@@ -90,7 +90,7 @@ The clearest current progress summary is here:
 - [notebooks/README.md](notebooks/README.md): optional exploratory analysis notes
 - [output/README.md](output/README.md): generated summary and protocol exports
 
-## Install
+## 6. Install
 
 Install the Python and command-line tools with conda or mamba:
 
@@ -107,7 +107,12 @@ The legacy FASTQ steps expect these command-line tools in your `PATH`:
 - `samtools`
 - `featureCounts` from Subread
 
-## Inputs You Need
+Important environment note:
+
+- the analysis scripts assume the Conda environment created from `environment.yml`
+- if you run them from a plain base Python without `scanpy` installed, the public-reference and Scanpy-based workflows will fail immediately
+
+## 7. Inputs You Need
 
 Edit [config/config.yaml](config/config.yaml) before running.
 
@@ -125,7 +130,7 @@ If you want to run the legacy FASTQ scaffold, the minimum inputs are:
 - A sample sheet like [data/metadata/samples.csv](data/metadata/samples.csv).
 - Optional known marker genes like [data/metadata/marker_genes.csv](data/metadata/marker_genes.csv).
 
-## Run Step by Step
+## 8. Run Step by Step
 
 The commands below describe the **legacy FASTQ-to-count-matrix route**. They remain useful if the lab or core provides raw per-cell FASTQs or if we need a custom alignment workflow.
 
@@ -220,7 +225,7 @@ python scripts/09_robustness_checks.py --config config/config.yaml
 
 This reruns neighbor graph and Leiden clustering across PCA dimensions, Leiden resolutions, and neighbor numbers, then reports how stable cluster assignments are.
 
-## One-Command Demo Runner
+## 9. One-Command Demo Runner
 
 After the config points to real files:
 
@@ -230,7 +235,7 @@ bash scripts/run_all.sh config/config.yaml
 
 For a first real dataset, run step by step instead of using `run_all.sh`; it is easier to inspect QC and catch path mistakes.
 
-## Statistical Prediction on Public References
+## 10. Statistical Prediction on Public References
 
 Before Wolffia data arrive, you can run a public-reference statistical workflow that:
 
@@ -299,7 +304,7 @@ Expected outputs include:
 - `figures/public_reference/cross_dataset_confusion_matrix.png`
 - `figures/public_reference/test_predicted_broad_program_umap.png`
 
-## Notes for Wolffia
+## 11. Notes for Wolffia
 
 - Wolffia organelle gene names may not follow human-style `MT-` prefixes. Edit `mitochondrial_gene_prefixes` and `plastid_gene_prefixes` in `config/config.yaml` after inspecting the annotation.
 - If the lab's `PIP-seq` workflow returns a processed matrix or `.h5ad` rather than per-cell FASTQs, start from the downstream Scanpy and transfer-analysis stages instead of forcing the legacy STAR and featureCounts route.
@@ -307,7 +312,7 @@ Expected outputs include:
 - Plant cells can have strong chloroplast/plastid signal. This pipeline computes plastid fractions when prefixes are provided, but does not hard-filter on plastid percentage by default.
 - Marker-based annotation is only as good as the marker table. Keep early labels coarse, especially for an under-annotated organism.
 
-## Main Outputs
+## 12. Main Outputs
 
 - `results/scanpy/00_raw_counts.h5ad`
 - `results/scanpy/01_qc_flagged.h5ad`
@@ -318,7 +323,7 @@ Expected outputs include:
 - `results/scanpy/robustness_summary.csv`
 - QC, UMAP, marker, and PAGA figures under `figures/`
 
-## Prediction-First Planning Docs
+## 13. Prediction-First Planning Docs
 
 Before Wolffia `PIP-seq` data arrive, the project is organized around a prediction-first comparative biology workflow:
 

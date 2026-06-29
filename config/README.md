@@ -1,8 +1,8 @@
-# Config Guide
+# 01. Config Guide
 
 This folder contains the configuration files used by different workflows in the repository.
 
-## Recommended Order
+## 01. Recommended Order
 
 1. `config.yaml`
    - main project configuration
@@ -24,7 +24,7 @@ This folder contains the configuration files used by different workflows in the 
 6. `public_reference_gse123818_wt_train_to_gse121619.yaml`
    - root-derived training reference transferred to `GSE121619`
 
-## For Most Viewers
+## 02. For Most Viewers
 
 If you are only trying to understand the project, start with:
 

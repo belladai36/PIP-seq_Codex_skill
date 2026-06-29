@@ -2,6 +2,10 @@
 from __future__ import annotations
 
 import argparse
+import os
+
+os.environ.setdefault("NUMBA_CACHE_DIR", "/private/tmp/numba-cache")
+os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/mplconfig")
 
 import scanpy as sc
 
@@ -34,4 +38,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

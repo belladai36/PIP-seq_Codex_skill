@@ -1,8 +1,8 @@
-# Scripts Guide
+# 01. Scripts Guide
 
 This folder contains both the main analysis scripts and the helper/export scripts.
 
-## Best Way to Read This Folder
+## 01. Best Way to Read This Folder
 
 There are four script groups.
 
@@ -52,8 +52,9 @@ These generate the polished project documents:
 5. `22_generate_plain_protocol_pdf.py`
 6. `23_generate_protocol_docx.py`
 7. `24_generate_detailed_protocol_pdf.py`
+8. `25_build_pipseq_protocol_docx.py`
 
-## Most Important Scripts Right Now
+## 02. Most Important Scripts Right Now
 
 If you only want the current project core, focus on:
 
@@ -61,7 +62,12 @@ If you only want the current project core, focus on:
 2. `17_cluster_public_reference.py`
 3. `19_generate_public_reference_umaps.py`
 
-## Utility Files
+Environment note:
+
+- the Scanpy-based scripts must be run inside the Conda environment created from `environment.yml`
+- in the current local machine setup, they were validated in the `py311` environment rather than in base Python
+
+## 03. Utility Files
 
 - `pipeline_utils.py`: shared helper functions
 - `run_all.sh`: convenience runner for the legacy FASTQ scaffold

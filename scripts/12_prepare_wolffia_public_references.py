@@ -5,6 +5,9 @@ import argparse
 import os
 from pathlib import Path
 
+os.environ.setdefault("NUMBA_CACHE_DIR", "/private/tmp/numba-cache")
+os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/mplconfig")
+
 import anndata as ad
 import pandas as pd
 import scanpy as sc

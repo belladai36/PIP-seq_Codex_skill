@@ -4,7 +4,6 @@ from __future__ import annotations
 import argparse
 import os
 
-os.environ.setdefault("NUMBA_DISABLE_JIT", "1")
 os.environ.setdefault("NUMBA_CACHE_DIR", "/private/tmp/numba-cache")
 os.environ.setdefault("MPLCONFIGDIR", "/private/tmp/mplconfig")
 
